@@ -151,7 +151,7 @@ function addCard(item) {
     cardDiv.appendChild(cardButton);
 }
 
-// Remove song pop up add scroll position 
+// Remove song pop up add scroll position
 function checkScrollPosition() {
     if(window.scrollY > 700) {
         musicWrapper.classList.remove("active");
