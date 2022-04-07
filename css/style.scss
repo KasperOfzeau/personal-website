@@ -166,7 +166,7 @@ a.scroll_down {
 
 h2 {
   font-family: 'Raleway', sans-serif;
-  font-weight: normal;
+  font-weight: 600;
   font-size: 48px;
 }
 
@@ -221,13 +221,10 @@ h2 {
         border-radius: 5px;
         background-color: $base-color4;
         color: #fafafa;
-        cursor: pointer;
         transition: all 100ms ease-in-out;
         -webkit-transition: all 100ms ease-in-out;
 
-        &:hover,
-        &:focus,
-        &:active {
+        &__good {
           background-color: $detail-color;
         }
       }
@@ -273,10 +270,27 @@ h2 {
   clip-path: polygon(0 7%, 100% 0%, 100% 93%, 0% 100%);
   margin: 50px 0;
   padding: 75px 0 100px 0;
+  text-align: center;
 
   h2 {
     width: 80%;
     margin: 0.83em auto;
+    text-align: left;
+  }
+
+  .readMore {
+    font-family: "Quicksand", sans-serif;
+    background: $base-color4;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 100ms ease-in-out;
+    -webkit-transition: all 100ms ease-in-out;
+
+    &:hover {
+      background: $detail-color;
+    }
   }
 }
 
@@ -285,7 +299,8 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 40px;
   width: 80%;
-  margin: auto;
+  margin: 50px auto 50px auto;
+  text-align: left;
 
   .card {
     @extend %shadows;
@@ -340,7 +355,7 @@ h2 {
   width: 28%;
   top: -200px;
   left: 35%;
-  background-color: rgb(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   font-family: 'Quicksand', sans-serif;
   color: white;
   font-weight: 900;
