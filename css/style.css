@@ -560,6 +560,11 @@ h2 {
   text-align: center;
 }
 
+.factsContainer div img {
+  margin: auto;
+  display: block;
+}
+
 footer {
   background: #353535;
   -webkit-clip-path: polygon(0 5%, 44% 14%, 100% 10%, 100% 100%, 0% 100%);
